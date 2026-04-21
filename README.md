@@ -19,21 +19,26 @@ adresa nenalezena.
 ### 1. Adresa nalezena
 
 ```Found: S```
+
 Tento výstup se tiskne, pokud je v databázi adres nalezena jediná adresa S, jejíž prefix odpovídá uživatelem zadané adrese ADRESA. (Pozn. prefix P řetězce S je takový řetězec, u kterého řetězec S začíná řetězcem P).
 
 ### 2. Adresa vyžaduje specifikaci
 
 ```Enable: CHARS```
+
 Pokud je v databázi adres nalezeno více adres odpovídající danému prefixu ADRESA, program pomocí takto naformátovaného řádku vytiskne seznam povolených kláves CHARS. CHARS je abecedně seřazený seznam znaků, u nichž pro každý znak C platí, že v databázi adres existuje adresa, jejíž prefix odpovídá spojení řetězce ADRESA s daným znakem C.
 
 ### 3. Adresa nenalezena
 
 ```Not found```
+
 Pokud v databázi adres neexistuje adresa, jejíž prefix by odpovídal zadanému řetězci ADRESA, vytiskne program toto hlášení
 
 ### Speciální případ!
 Ve zvláštním případě, kde ADRESA je shodná s existujícím záznamem v databázi adres a zároveň je ADRESA prefixem jiné adresy, program vytiskne dva řádky:
 
 ```Found: ADRESA```
+
 ```Enable: CHARS```
+
 kde CHARS jsou znaky odpovídající možným způsobem pokračování adresy. (Příkladem může být zadání YORK s adresami York a Yorktown - program vytiskne jednak Found: YORK, ale také Enable: T).

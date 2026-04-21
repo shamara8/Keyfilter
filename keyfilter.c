@@ -1,3 +1,11 @@
+/**
+* KEYFILTER
+* A program that emulates the algorithm for enabling and disabling keys on a virtual navigation keyboard
+*     VUT FIT 2025
+* Author: Stefan Hamara
+* Date: 18.10.2025
+**/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
